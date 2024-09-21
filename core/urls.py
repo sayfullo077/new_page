@@ -24,7 +24,6 @@ urlpatterns = [
     path('', include('main.urls', namespace='main')),
 ]
 
-# Debug modda bo'lsa, debug_toolbar va media fayllarini qo'shamiz
 if settings.DEBUG:
     urlpatterns += [
         path("__debug__/", include("debug_toolbar.urls")),
