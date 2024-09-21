@@ -28,8 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECRET_KEY = config["SECRET_KEY"]
 SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(config["DEBUG"])
-
+# DEBUG = bool(config["DEBUG"])
+DEBUG = bool(os.getenv("DEBUG", "False") == "True")
 ALLOWED_HOSTS = ["*"]
 
 
