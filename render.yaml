@@ -1,0 +1,4 @@
+# render.yaml (agar mavjud bo'lsa)
+build:
+  commands:
+    - python manage.py collectstatic --noinput
