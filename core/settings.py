@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-import os
+import os, dj_database_url
 from pathlib import Path
 from dotenv import load_dotenv, dotenv_values
 load_dotenv()
@@ -84,15 +84,20 @@ LOCALE_PATHS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.sqlite3',
-        'NAME':config['POSTGRES_NAME'],
-        'USER':config['POSTGRES_USER'],
-        'PASSWORD':config['POSTGRES_PASSWORD'],
-        'HOST':config['POSTGRES_HOST'],
-        'PORT':config['POSTGRES_PORT'],
-    }
+    'default': dj_database_url.config(default=config['DATABASE_URL'])
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.db.backends.sqlite3',
+#         'NAME':config['POSTGRES_NAME'],
+#         'USER':config['POSTGRES_USER'],
+#         'PASSWORD':config['POSTGRES_PASSWORD'],
+#         'HOST':config['POSTGRES_HOST'],
+#         'PORT':config['POSTGRES_PORT'],
+#     }
+# }
 
 
 # Password validation
