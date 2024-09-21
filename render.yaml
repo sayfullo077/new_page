@@ -1,9 +1,2 @@
-version: 1
-services:
-  - type: web
-    name: your-service-name
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn config.wsgi --log-file -"
-    runCommand: "python manage.py collectstatic --noinput && gunicorn config.wsgi --log-file -"
-    autoDeploy: true
+buildCommand: "python manage.py collectstatic --noinput"
+runCommand: "gunicorn config.wsgi --log-file -"
