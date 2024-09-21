@@ -267,6 +267,7 @@ pyrightconfig.json
 .env
 venv
 /env
+/env/
 env
 .DS_Store
 my_blog
