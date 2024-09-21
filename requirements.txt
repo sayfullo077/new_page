@@ -1,0 +1,4 @@
+Django==5.0.7
+python-dotenv==1.0.1
+tk==0.1.0
+validate-email-address==1

@@ -1,0 +1,370 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<body>
+    
+    <div class="sequence">
+        <div class="seq-preloader">
+            <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
+                <g fill="#F96D38">
+                    <path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/>
+                    <path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/>
+                    <path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </div>
+        <div class="mini-logo">
+            <img src="{% static 'img/mini_logo.png' %}" alt="rtgd">
+        </div>
+        <ul>
+            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
+            <li><a href="#2"><i class="fa fa-user"></i> <em>About me</em></a></li>
+            <li><a href="#3"><i class="fa fa-globe"></i> <em>Skills</em></a></li>
+            <li><a href="#4"><i class="fa fa-image"></i> <em>Portfolios</em></a></li>
+            <li><a href="#5"><i class="fa fa-envelope"></i> <em>Contact</em></a></li>
+        </ul>
+    </nav>
+    
+    <div class="slides">
+        <div class="slide" id="1">
+            <div class="content first-content">
+                <div class="container-fluid">
+                    <div class="social-links">
+                        <div class="row">
+                            <a href="https://t.me/Sayfulloh_Mamatqulov" target="_blank" title="Telegram">
+                                <i class="fab fa-telegram"></i><span>Telegram</span>
+                            </a>
+                            <a href="https://www.instagram.com/sayfulloh._077/" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i><span>Instagram</span>
+                            </a>
+                            <a href="https://www.facebook.com/sayfulloh.mamatqulov.1" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook"></i><span>Facebook</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sayfullo-mamatqulov-5bb26a247/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/sayfullo077" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i><span>GitHub</span>
+                            </a>
+                            <a href="mailto:sayfulloh.dev@gmail.com" target="_blank" title="Gmail">
+                                <i class="fas fa-envelope"></i><span>Gmail</span>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p><i class="fas fa-phone"></i><span> +998 90-179-14-59</span></p>
+                            <p><i class="fas fa-phone"></i><span> +998 93-179-14-59</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="author-image"><img src="{% static 'img/software.png' %}" alt=""></div>
+                    </div>
+                    
+                    <div class="col-md-9 author-name">
+                        <h2>Sayfulloh Mamatkulov</h2>
+                        <p>Hi, I'm a <em>backend developer</em>. I learned the direction of <em>Python-Web</em> programming under the hands of strong teachers at the <em>"Najot Ta'lim"</em> educational center. During our studies, we learned to create interesting <em>web applications</em>, useful <em>Telegram bots</em>, and find solutions to various problems. I am currently working as a <em>freelancer</em>, building <em>various sites and bots</em>. I always work on myself to stay updated. My goal is to become a strong expert in this field and succeed.</p>
+                        <div class="main-btn"><a href="#2">Read More</a></div>
+                        <div class="fb-btn"><a href="https://drive.google.com/file/d/1qC_-QkTgWL3CEDBujEiNVMfLc-6ftNMN/view?pli=1" target="_blank">Open CV</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="2">
+            <div class="content second-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h2>About Me</h2>
+                            <p><b>Margilan Bank College</b><br> Specialization in banking and accounting <br> 1 September 2013 - 5 June 2016</p> 
+                            <p><b>Ferghana Polytechnic Institute </b><br> Faculty of Mechanics, Automotive specialty (Bachelor) <br> 1 October 2022 to now</p>
+                            <p><b>Ferghana Najot Ta’lim </b><br> I completed the Python Backend course in 8 months <br> 7 June 2023 - 26 January 2024</p>
+                            <p>Uzbek -Native
+                                <br>English - Elementary
+                                <br>Russian - Elementary
+                                <br>Korean - Middle </p>
+                            <div class="main-btn"><a href="#3">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-image">
+                            <img src="{% static 'img/about_image2.jpeg' %}" alt="about_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Skills</h2>
+                                                <p>Python : Django, FastAPI, RestApi, Flask, bs4, Tkinter
+                                                    <br><br>OOP, ORM, SQLAlchemy, CRM, CRUD, MVT, MVP
+                                                    <br><br>Aiogram2, Aiogram3, TelegramBot
+                                                    <br><br>Postgresql, MySQL, SQL
+                                                    <br><br>Git, GitHub, GitLab
+                                                    <br><br>HTML, CSS</p>
+                                                <div class="main-btn"><a href="#4">Continue Reading</a></div><br>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <img src="{% static 'img/about_image3.jpg' %}" alt="first service">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="slide" id="4">
+            <div class="content fourth-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/first_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number One</h2>
+                                            <p>Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/first_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/second_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Two</h2>
+                                            <p>Donec eget dictum tellus. Curabitur a interdum diam. Nulla vestibulum porttitor porta.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/second_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/third_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Three</h2>
+                                            <p>Cras varius dolor et augue fringilla, eu commodo sapien iaculis.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/third_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/fourth_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Four</h2>
+                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/fourth_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/fifth_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Fifth Item</h2>
+                                            <p>Donec commodo, ex nec rutrum venenatis, nisi nisl malesuada magna.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/fifth_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/sixth_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Sixth Item</h2>
+                                            <p>Maecenas dapibus neque sed nisl consectetur, id semper nisi egestas.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/sixth_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/seventh_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Seven</h2>
+                                            <p>Etiam aliquet, est id varius fringilla, eros libero pellentesque lectus.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/seventh_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/eight_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Eight</h2>
+                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/eight_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/ninth_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Nine</h2>
+                                            <p>Orci varius natoque penatibus et magnis dis parturient montes.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/ninth_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/fifth_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Number Ten</h2>
+                                            <p>Vestibulum augue ex, finibus sit amet nisi id, maximus ultrices ipsum.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/fifth_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/first_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Eleventh Item</h2>
+                                            <p>Cras varius dolor et augue fringilla, eu commodo sapien iaculis.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/first_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="{% static 'img/second_big_item.jpg' %}" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2>Twelvth Item</h2>
+                                            <p>Etiam tincidunt magna ex, sit amet lobortis felis bibendum id.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="{% static 'img/second_item.jpg' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="5">
+            <div class="content fifth-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div id="map" style="width: 100%">
+                            <iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Taras%20Shevchenko%206,%20Tashkent,%20Uzbekistan+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"><a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="contact" action="" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="from_email" type="email" class="form-control" id="from_email" placeholder="Your email..." required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="btn">Send Now</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+    {% endblock %}
