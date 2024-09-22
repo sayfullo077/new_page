@@ -3,7 +3,7 @@ services:
   web:
     type: web
     buildCommand: "python manage.py collectstatic --noinput"
-    runCommand: "gunicorn config.wsgi --log-file -"
+    runCommand: "gunicorn Porfolio.core.wsgi --log-file -"
     env:
       DJANGO_SETTINGS_MODULE: "Porfolio.core.settings"
     healthCheck:
