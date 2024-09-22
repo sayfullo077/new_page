@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib import messages
 
+
 def home_view(request):
     context = {
         'title': 'Sayfulloh',
